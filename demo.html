@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;}
+		.btn{
+			width:90px;line-height:30px;margin:20px auto;margin-top: 100px;
+			border: 0;outline: none;background:gray;color: #fff;
+			display: flex;justify-content: center;align-items: center;
+		}
+	</style>
+	<link rel="stylesheet" href="tipMsg.css" />
+</head>
+<body>
+	<button class="btn">显示提示</button>
+	<script src="jquery.min.js"></script>
+	<script src="jquery.tipMsg.js" charset="utf-8"></script>
+	<script>
+		//执行代码
+		var btn = $(".btn");
+		btn.on("click",function(){
+			$(this).tipMsg({
+				//参数1：tip提示的内容
+				tipMsg:"您的地址为空！",
+				//参数2:提示按钮的个数
+				btnNum:2,
+				//tip提示按钮的内容
+				btnMsg:["确定","取消"]
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--  -->
